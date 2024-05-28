@@ -69,11 +69,34 @@
 // export default App;
 
 // App.js
+
+// import React from 'react';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import LoginPage from './LoginPage';
+// import HomePage from './home/HomePage';
+// import './index.css'; // Ensure consistent styling
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//       <Routes>
+//         <Route path="/" element={<LoginPage />} />
+//         <Route path="/home" element={<HomePage />} />
+//       </Routes>
+//     </BrowserRouter>
+//   );
+// }
+
+// export default App;
+
+// src/App.js
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LoginPage from './LoginPage';
 import HomePage from './home/HomePage';
+import ServiceDetail from './home/ServiceDetail'; // Import the new component
 import './index.css'; // Ensure consistent styling
+// src/App.js
 
 function App() {
   return (
@@ -81,10 +104,10 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/service-detail" element={<ServiceDetail />} /> {/* Add the route */}
       </Routes>
     </BrowserRouter>
   );
 }
 
 export default App;
-

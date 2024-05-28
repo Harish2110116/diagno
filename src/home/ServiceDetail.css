@@ -1,0 +1,114 @@
+/* src/ServiceDetail.css */
+.service-detail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .menu-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown button {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown button:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .service-detail-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .service-detail-image img {
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0; /* Remove default margin */
+  }
+  
+  .service-detail-text {
+    width: 100%;
+    height: 100%;
+    background-color:#e9f7fe;
+    padding: 20px; /* Add padding to create space between text and container edges */
+    margin-left: 20px;
+
+}
+
+.image-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+  }
+  .image-controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #007bff;
+    padding: 10px 10px;
+  }
+  
+.dots {
+    font-size: 24px;
+    margin: 10px;
+    color: #007bff;
+}
+  
+.active-dot {
+    color: #007bff !important; /* Ensure active state overrides other styles */
+}
+  
+.inactive-dot {
+    color: #ccc !important; /* Ensure inactive state overrides other styles */
+}
+  
+.service-detail-text {
+    text-align: center;
+}
+.image-controls button:disabled {
+    color: #ccc; /* Change color when disabled */
+    cursor: not-allowed; /* Change cursor when disabled */
+}
